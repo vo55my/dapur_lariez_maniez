@@ -20,7 +20,7 @@ export default function WhyChooseSection() {
   return (
     <section className="bg-[#efeeeb] py-18">
       <div className="mx-auto max-w-[1200px] px-5 md:px-16">
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
           {reasons.map((reason, idx) => (
             <div
               key={reason.label}
