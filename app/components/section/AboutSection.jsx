@@ -39,8 +39,8 @@ export default function AboutSection() {
 
   return (
     <section id="tentang" className="bg-[#f4f3f1] py-24">
-      <div className="mx-auto flex max-w-[1200px] flex-col gap-16 px-5 md:flex-row md:px-16">
-        <div className="relative w-full md:w-1/2" data-aos="fade-right">
+      <div className="mx-auto flex max-w-[1200px] flex-col items-center gap-16 px-5 md:flex-col md:items-center md:px-16 lg:flex-row lg:items-start text-left">
+        <div className="relative w-full lg:w-1/2" data-aos="fade-right">
           <div className="relative aspect-[4/4] overflow-hidden rounded-2xl shadow-xl">
             <Image
               fill
@@ -61,7 +61,7 @@ export default function AboutSection() {
           </div>
         </div>
         <div
-          className="w-full md:w-1/2 flex flex-col justify-center"
+          className="w-full lg:w-1/2 flex flex-col justify-center"
           data-aos="fade-left"
         >
           <h2 className="mb-6 text-3xl font-secondary font-bold text-[#9e3d00]">
@@ -74,7 +74,7 @@ export default function AboutSection() {
             rasa yang terjaga untuk memenuhi kebutuhan acara keluarga, kantor,
             rapat, seminar, ulang tahun, hingga syukuran.
           </p>
-          <div className="grid gap-6 sm:grid-cols-2">
+          <div className="grid gap-6 grid-cols-2">
             {features.map((feature, idx) => (
               <div
                 key={feature.title}
