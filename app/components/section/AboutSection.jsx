@@ -1,19 +1,10 @@
-"use client";
-
-import React, { useEffect } from "react";
 import Image from "next/image";
 import { GoHomeFill } from "react-icons/go";
 import { HiBadgeCheck } from "react-icons/hi";
 import { MdEditNote } from "react-icons/md";
 import { FaMoneyBills } from "react-icons/fa6";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 export default function AboutSection() {
-  useEffect(() => {
-    AOS.init({ duration: 800, once: true });
-  }, []);
-
   const features = [
     {
       icon: <GoHomeFill className="h-6 w-6" />,
@@ -44,7 +35,7 @@ export default function AboutSection() {
           <div className="relative aspect-[4/4] overflow-hidden rounded-2xl shadow-xl">
             <Image
               fill
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBQogC3uI8p1Gsh0bqSHPf3oGVjJTO10HNS2-awNtu-QlP0QSa5RoWyY1ZuocWM6wnRwFe_M10EYS391XjYk-yd0L8LgpwSfyISN-WxsDn_8nKcUM9pW7ObxbCvLqjT1eun6MQL87EH3GENDtGgwHoZUQf0gaDoK-qzEJRJbOMs3hA_sVIQXjwdzENsNRVRzPs1snwhK22e8ZWmySDlEwfAh1QRpi13gRGd81fzOx-1TvTgbkYpnSMvUzPGmdNmB4MSRTo7mpat8gX"
+              src="/About.png"
               alt="Dapur Lariez Maniez Story"
               className="object-cover"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"

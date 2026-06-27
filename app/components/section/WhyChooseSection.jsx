@@ -24,7 +24,7 @@ export default function WhyChooseSection() {
           {reasons.map((reason, idx) => (
             <div
               key={reason.label}
-              className="flex flex-col items-center gap-4 rounded-[2rem] p-4 text-center"
+              className="flex flex-col items-center gap-4 rounded-[2rem] p-4 text-center transition-transform duration-300 hover:scale-105"
               data-aos="fade-up"
               data-aos-delay={idx * 80}
             >

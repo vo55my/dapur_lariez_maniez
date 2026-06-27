@@ -11,7 +11,11 @@ export default function CTASection() {
           <h2 className="mb-6 text-4xl font-secondary font-bold leading-tight">
             Siap Menyediakan Snack untuk Acara Anda?
           </h2>
-          <p className="mx-auto mb-10 max-w-xl text-base leading-relaxed text-white/80" data-aos="fade-up" data-aos-delay="100">
+          <p
+            className="mx-auto mb-10 max-w-xl text-base leading-relaxed text-white/80"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             Klik tombol di bawah ini untuk konsultasi menu dan pemesanan cepat
             via WhatsApp.
           </p>

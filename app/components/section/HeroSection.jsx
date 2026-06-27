@@ -4,19 +4,19 @@ import { FaWhatsapp } from "react-icons/fa";
 
 const heroImages = [
   {
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuDuZPI_pdo1Y_Ip3sd6DggNKnhrQKNC5RbPW5h9HN7TS5ygzE4rEuEIhT-DSYcBbDYuaODzTENRQCQ3PNwHW6IlK2uOYH7vyYXh0OSYK1Y49LXJp6T3rI0oGoiBHz1gJjt-jhGbtVunXrB0v_QdJs9nrRiROugZCpjlXjERtceCF6M-0Txkbf57d4iRe3QG74LWQOSExo65YVNCLGbf8H-Z1VooP-OkGID9J1DgFB1evG-oWST5OsQx4qG-oUYtP2DTYSDc0H5HASOi",
+    src: "/Hero-1.png",
     alt: "Snack Box",
   },
   {
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuB7eL8AlYSnEcmmYrfsWc6iynNW4vO8tl_0AMY_-qXq9y2UZpNgsElPY1nHW58kbJ4MSmOL3KMzdFXhWQHpzb3g1uhfRMBM9ep7jtbBVoA5c-LTZDndbt_JglnUq70vkonCzpf5vN9rkkZmU_rPjmXxNFzsat7YLAiY0R0Q-QYErYna5aCz6RG9dr5fCu16YvTu3tYVE7qMitUgyyJndfggG4OenL0hwXhC63VfYToMKUaPKL_QakNpQenDjmY6NRtDDdwd6o2X_h6e",
+    src: "/Hero-2.png",
     alt: "Nasi Kuning",
   },
   {
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCLiuJlRylXXjZup2_mUT3B-I4w_cu-ACdYbi56aWeoJgZ2CaJiOJGYML7KLVcDVH7Wz35s3s12of2W66y1IoV7IYeAhy072DXGBX_EoUdTuqCycdIBtygLURG5iSWPyuXz8nc39_ADWW13zEUqYng-iWRQYRz7XLhzP9JXUUODbz4q5IApQIHB40bIq0KN8YPXSnEZ2q_mKECR3uFqiucluZ0Sujf6iGwTHf1E88ZmVPA6ny8YWCa5mCpjyA4cAaRtXIf02H5aHYM9",
+    src: "/Hero-3.png",
     alt: "Kue Basah",
   },
   {
-    src: "https://lh3.googleusercontent.com/aida-public/AB6AXuCZFtqbPFZTSz4_WcjJ9j7DlUJpM2RHKD4buReNP2LN7F-ibgMM8KSf65RuEXh6H2jBYFuhr59iCg8swKJgCfpZsa-cSEPpcIDY8AI_ehVMeLLF5J8D33ZUkpJhkQANjNSqV0MLILZGfLoZU_f4wW-kPO13g2JfPojH8xM3gz2-ZsMuvmuQzsK2-3XY-6uWRalVbW-IdVJz67Nf6KWgk5d378ZlMC7QbM08ISvnP6GkIwDK7R9pm611BiEspLFXn3rebMQPvJN2HtpQ",
+    src: "/Hero-4.png",
     alt: "Catering Service",
   },
 ];

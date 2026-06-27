@@ -17,9 +17,9 @@ export default function Footer() {
             <Image src="/Logo.png" alt="Logo" width={60} height={60} />
           </Link>
           <p className="mb-4 text-sm sm:text-base leading-relaxed text-[#4f463f]">
-            Penyedia catering snack box dan nasi kuning terpercaya di Purwakarta.
-            Menghadirkan kehangatan cita rasa rumahan untuk setiap momen spesial
-            Anda.
+            Penyedia catering snack box dan nasi kuning terpercaya di
+            Purwakarta. Menghadirkan kehangatan cita rasa rumahan untuk setiap
+            momen spesial Anda.
           </p>
           <div className="flex gap-4">
             <Link
@@ -38,7 +38,9 @@ export default function Footer() {
         </div>
         <div className="grid gap-8 grid-cols-1 sm:grid-cols-2">
           <div>
-            <h4 className="mb-4 text-sm sm:text-base text-[#9e3d00]">Informasi</h4>
+            <h4 className="mb-4 text-sm sm:text-base text-[#9e3d00]">
+              Informasi
+            </h4>
             <ul className="space-y-3 text-sm sm:text-base text-[#4f463f]">
               <li>
                 <Link className="transition hover:text-[#9e3d00]" href="#menu">
@@ -64,7 +66,10 @@ export default function Footer() {
             <h4 className="mb-4 text-sm sm:text-base text-[#9e3d00]">Kontak</h4>
             <ul className="space-y-3 text-sm sm:text-base text-[#4f463f]">
               <li className="flex items-start gap-3">
-                <FiPhone size={20} className="text-[#4f463f] flex-shrink-0 mt-0.5" />
+                <FiPhone
+                  size={20}
+                  className="text-[#4f463f] flex-shrink-0 mt-0.5"
+                />
                 <span className="text-sm sm:text-base text-[#4f463f]">
                   +62 812-3456-7890
                 </span>
