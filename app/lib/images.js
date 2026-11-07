@@ -1,30 +1,30 @@
 // Daftar gambar yang dipakai di halaman.
 export const images = {
   hero: {
-    nasiKuning: "/Nasi Kuning Box.jpeg",
-    kueBasah: "/Kue Basah.jpeg",
-    anekaGorengan: "/Aneka Gorengan.jpeg",
+    nasiKuning: "/Nasi Kuning Box.webp",
+    kueBasah: "/Kue Basah.webp",
+    anekaGorengan: "/Aneka Gorengan.webp",
   },
   about: {
     dapur:
-      "/Dapur.jpeg",
+      "/Dapur.webp",
   },
   menu: {
-    nasiKuning: "/Nasi Kuning Box.jpeg",
-    kueBasah: "/Kue Basah.jpeg",
-    anekaGorengan: "/Aneka Gorengan.jpeg",
-    snackBox: "/Snack Box.jpeg",
+    nasiKuning: "/Nasi Kuning Box.webp",
+    kueBasah: "/Kue Basah.webp",
+    anekaGorengan: "/Aneka Gorengan.webp",
+    snackBox: "/Snack Box.webp",
   },
   // Urutan sama dengan daftar caption di components/sections/Gallery.jsx
   gallery: [
-    "/Nasi Tumpeng.jpeg",
-    "/Nasi Kuning Box.jpeg",
-    "/Kue Basah.jpeg",
-    "/Aneka Gorengan.jpeg",
-    "/Snack Box.jpeg",
-    "/Persiapan Makanan.jpeg",
-    "/Persiapan Pengemasan.jpeg",
-    "/Persiapan Diantar.jpeg",
+    "/Nasi Tumpeng.webp",
+    "/Nasi Kuning Box.webp",
+    "/Kue Basah.webp",
+    "/Aneka Gorengan.webp",
+    "/Snack Box.webp",
+    "/Persiapan Makanan.webp",
+    "/Persiapan Pengemasan.webp",
+    "/Persiapan Diantar.webp",
   ],
 };
 

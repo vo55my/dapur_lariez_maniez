@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { images, isRemote } from "../../lib/images";
 import { WHATSAPP_URL } from "../../lib/site";
+import { MdArrowForward } from "react-icons/md";
 
 // Tiga sekat kecil di sisi kanan "kotak bersekat"
 const SIDE_ITEMS = [
@@ -59,7 +60,11 @@ export default function Menu() {
         </div>
 
         {/* Kotak bersekat: 1 sekat besar + 3 sekat kecil. Di bawah lg semuanya bertumpuk satu kolom agar teks tetap lega. */}
-        <div className="w-full overflow-hidden rounded-[24px] border-2 border-arang bg-kertas-terang shadow-brut-md" data-aos="fade-up" data-aos-delay="100">
+        <div
+          className="w-full overflow-hidden rounded-[24px] border-2 border-arang bg-kertas-terang shadow-brut-md"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
           <div className="grid grid-cols-1 divide-y-2 divide-arang lg:grid-cols-12 lg:divide-x-2 lg:divide-y-0">
             {/* Sekat utama: Nasi Kuning */}
             <article className="flex flex-col bg-surface-container-lowest lg:col-span-6">
@@ -96,9 +101,14 @@ export default function Menu() {
                     href={WHATSAPP_URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-button text-daun-pekat hover:underline"
+                    className="group inline-flex items-center gap-1 text-button text-daun-pekat hover:underline"
                   >
-                    Tanya Isi →
+                    <span>Tanya Isi</span>
+                    <MdArrowForward
+                      size={18}
+                      aria-hidden="true"
+                      className="transition-transform duration-200 group-hover:translate-x-1"
+                    />
                   </a>
                 </div>
               </div>
@@ -150,9 +160,14 @@ export default function Menu() {
                           href={WHATSAPP_URL}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-small font-bold text-daun-pekat hover:underline"
+                          className="group inline-flex items-center gap-1 text-small font-bold text-daun-pekat hover:underline"
                         >
-                          Konsultasi →
+                          <span>Konsultasi</span>
+                          <MdArrowForward
+                            size={18}
+                            aria-hidden="true"
+                            className="transition-transform duration-200 group-hover:translate-x-1"
+                          />
                         </a>
                       </div>
                     ) : (

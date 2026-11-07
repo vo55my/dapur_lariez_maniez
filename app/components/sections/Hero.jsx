@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { MdOutlineEvent, MdVerified } from "react-icons/md";
+import { MdOutlineEvent, MdVerified, MdArrowForward } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import { images, isRemote } from "../../lib/images";
 import { WHATSAPP_URL } from "../../lib/site";
@@ -53,9 +53,14 @@ export default function Hero() {
               </a>
               <a
                 href="#menu"
-                className="px-2 py-3 text-button text-arang underline decoration-arang decoration-2 underline-offset-4 transition-colors hover:text-daun-pekat"
+                className="group inline-flex items-center gap-2 px-2 py-3 text-button text-arang hover:underline decoration-arang decoration-2 underline-offset-4 transition-colors hover:text-daun-pekat"
               >
-                Lihat menu →
+                <span>Lihat menu</span>
+                <MdArrowForward
+                  size={18}
+                  aria-hidden="true"
+                  className="transition-transform duration-200 group-hover:translate-x-1"
+                />
               </a>
             </div>
 
