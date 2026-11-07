@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FaWhatsapp } from "react-icons/fa";
 import { WHATSAPP_URL, SITE_NAME } from "../../lib/site";
+import { images, isRemote } from "../../lib/images";
 
 const FOOTER_LINKS = [
   { label: "Tentang Kami", href: "#tentang" },
@@ -20,7 +21,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="space-y-space-sm">
             <Image
-              src="/Logo.png"
+              src={images.logo.logo}
               alt="Logo"
               width={70}
               height={70}

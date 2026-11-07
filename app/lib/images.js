@@ -1,5 +1,8 @@
 // Daftar gambar yang dipakai di halaman.
 export const images = {
+  logo: {
+    logo: "/Logo.webp",
+  },
   hero: {
     nasiKuning: "/Nasi Kuning Box.webp",
     kueBasah: "/Kue Basah.webp",

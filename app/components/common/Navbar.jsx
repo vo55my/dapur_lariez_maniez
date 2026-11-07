@@ -6,6 +6,7 @@ import Link from "next/link";
 import { MdClose, MdMenu } from "react-icons/md";
 import { FaWhatsapp } from "react-icons/fa";
 import { NAV_LINKS, WHATSAPP_URL } from "../../lib/site";
+import { images, isRemote } from "../../lib/images";
 
 // Section yang dipantau untuk menandai menu aktif saat scroll.
 // "hero" dan "kontak" ikut dipantau supaya sorotan menu hilang di luar section menu.
@@ -65,7 +66,7 @@ export default function Navbar() {
           className="flex items-center gap-space-sm"
         >
           <Image
-            src="/Logo.png"
+            src={images.logo.logo}
             alt="Logo"
             width={50}
             height={50}
