@@ -1,28 +1,28 @@
-import AboutSection from "./components/section/AboutSection";
-import CTASection from "./components/section/CTASection";
-import FeaturedMenuSection from "./components/section/FeaturedMenuSection";
-import Footer from "./components/common/Footer";
-import HeroSection from "./components/section/HeroSection";
 import Navbar from "./components/common/Navbar";
-import PackagesSection from "./components/section/PackagesSection";
-import GallerySection from "./components/section/GallerySection";
-import TestimonialsSection from "./components/section/TestimonialsSection";
-import WhyChooseSection from "./components/section/WhyChooseSection";
+import Hero from "./components/sections/Hero";
+import About from "./components/sections/About";
+import Menu from "./components/sections/Menu";
+import HowToOrder from "./components/sections/HowToOrder";
+import WhyUs from "./components/sections/WhyUs";
+import Gallery from "./components/sections/Gallery";
+import Testimonials from "./components/sections/Testimonials";
+import FinalCTA from "./components/sections/FinalCTA";
+import Footer from "./components/common/Footer";
 import FloatingCTA from "./components/common/FloatingCTA";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <main>
-        <HeroSection />
-        <AboutSection />
-        <FeaturedMenuSection />
-        <PackagesSection />
-        <WhyChooseSection />
-        <GallerySection />
-        <TestimonialsSection />
-        <CTASection />
+      <main id="main" className="w-full flex-1">
+        <Hero />
+        <About />
+        <Menu />
+        <HowToOrder />
+        <WhyUs />
+        <Gallery />
+        <Testimonials />
+        <FinalCTA />
       </main>
       <Footer />
       <FloatingCTA />
