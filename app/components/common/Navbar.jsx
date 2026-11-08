@@ -26,6 +26,8 @@ const WA_BUTTON =
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [menuMounted, setMenuMounted] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
   const [active, setActive] = useState("");
 
   useEffect(() => {
@@ -49,13 +51,26 @@ export default function Navbar() {
   useEffect(() => {
     if (!open) return;
     const onKeyDown = (event) => {
-      if (event.key === "Escape") setOpen(false);
+      if (event.key === "Escape") {
+        setOpen(false);
+        setIsClosing(true);
+      }
     };
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [open]);
 
-  const closeMenu = () => setOpen(false);
+  const openMenu = () => {
+    setIsClosing(false);
+    setMenuMounted(true);
+    setOpen(true);
+  };
+
+  const closeMenu = () => {
+    if (!open) return;
+    setOpen(false);
+    setIsClosing(true);
+  };
 
   return (
     <header className="sticky top-0 z-50 border-b border-border-hairline bg-surface-container-lowest">
@@ -112,7 +127,7 @@ export default function Navbar() {
           {/* Tombol menu mobile & tablet */}
           <button
             type="button"
-            onClick={() => setOpen((value) => !value)}
+            onClick={open ? closeMenu : openMenu}
             aria-expanded={open}
             aria-controls="mobile-menu"
             aria-label={open ? "Tutup menu" : "Buka menu"}
@@ -128,10 +143,20 @@ export default function Navbar() {
       </div>
 
       {/* Panel menu mobile & tablet */}
-      {open && (
+      {menuMounted && (
         <div
           id="mobile-menu"
-          className="absolute inset-x-0 top-full border-y-2 border-arang bg-surface-container-lowest lg:hidden"
+          aria-hidden={!open}
+          inert={!open}
+          onAnimationEnd={(event) => {
+            if (isClosing && event.target === event.currentTarget) {
+              setMenuMounted(false);
+              setIsClosing(false);
+            }
+          }}
+          className={`absolute inset-x-0 top-full border-y-2 border-arang bg-surface-container-lowest lg:hidden ${
+            isClosing ? "mobile-menu-exit" : "mobile-menu-enter"
+          }`}
         >
           <div className="mx-auto flex w-full max-w-[1120px] flex-col gap-space-xs px-margin py-space-md md:px-margin-tablet lg:px-margin-desktop">
             <nav

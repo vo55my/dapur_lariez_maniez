@@ -123,8 +123,8 @@
 
 /* Font diisi lewat next/font di layout.js */
 @theme inline {
-  --font-sans: var(--font-plus-jakarta-sans), ui-sans-serif, system-ui,
-    sans-serif;
+  --font-sans:
+    var(--font-plus-jakarta-sans), ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {
@@ -159,3 +159,41 @@
   }
 }
 
+@keyframes mobile-menu-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-0.75rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mobile-menu-enter {
+  animation: mobile-menu-enter 300ms ease-out both;
+}
+
+@keyframes mobile-menu-exit {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-0.75rem);
+  }
+}
+
+.mobile-menu-exit {
+  animation: mobile-menu-exit 220ms ease-in both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mobile-menu-enter,
+  .mobile-menu-exit {
+    animation-duration: 1ms;
+  }
+}
